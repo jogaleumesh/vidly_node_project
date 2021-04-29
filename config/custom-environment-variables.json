@@ -1,6 +1,3 @@
 {
-  "jwtPrivateKey":"vidly_jwtPrivateKey",
-  "mail":{
-    "password":"vidly_password"
-  }
+  "jwtPrivateKey":"vidly_jwtPrivateKey"
 }

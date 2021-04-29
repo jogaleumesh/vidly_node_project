@@ -1,4 +1,4 @@
-function asyncMiddleware(handler) {
+export default function(handler) {
   return async (req, res, next) => {
     try{
       await handler(req, res);
@@ -7,5 +7,3 @@ function asyncMiddleware(handler) {
     }
   }
 }
-
-export default asyncMiddleware;
