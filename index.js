@@ -10,6 +10,7 @@ import routes from './startup/routes.js';
 import db from './startup/db.js';
 import appConfig from './startup/config.js';
 import validation from './startup/validation.js';
+import prod from './startup/prod.js';
 
 const app = express();
 
@@ -19,6 +20,7 @@ routes(app);
 db();
 appConfig();
 validation();
+prod();
 
 const port = process.env.PORT || config.get("port");
 const server = app.listen(port, () =>
